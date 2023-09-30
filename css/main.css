@@ -45,7 +45,7 @@ header .logo {
 }
 
 section {
-    padding: 2em;
+    padding: 2em 2em 4em;
 }
 
 .section-title {
@@ -247,22 +247,22 @@ section h2 {
     transform: scale(1.1);
 }
 
-#gallery {
+#process {
     padding: 2em 0.2em;
 }
-#gallery .content {
+#process .content {
     display: flex;
     flex-direction: column;
     position: relative;
     width: 100%;
     align-items: center;
 }
-#gallery .content .card {
+#process .content .card {
     padding: 1em;
     width: 100%;
 }
 
-#gallery .content .card-title {
+#process .content .card-title {
     background-color: #000;
     color: #fff;
     padding: 0.5em 1em;
@@ -270,13 +270,13 @@ section h2 {
     width: 200px;
     text-align: center;
 }
-#gallery .content .p-extend {
+#process .content .p-extend {
     padding: 3em;
     font-size: 0.825rem;
     background: #fbf1f1;
 }
 
-#gallery .content p {
+#process .content p {
     color: #707072;
     font-size: 14px;
     padding-left: 2em;
@@ -320,6 +320,21 @@ section h2 {
     transform: scaleX(-1);
     overflow: visible;
     top: -30px;
+}
+
+#gallery .content {
+    display: flex;
+    gap: 1em;
+    width: 100%;
+    overflow: auto;
+}
+#gallery .content > div {
+    flex: 1 0 30%;
+}
+#gallery .content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 footer {
@@ -373,4 +388,24 @@ footer * {
     /* width: 10px; */
     flex: 1;
     max-width: 30px;
+}
+
+.image-view {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    display: none;
+    height: 100vh;
+    background-color: #000000de;
+}
+
+.image-view.active {
+    display: grid;
+    place-items: center;
+}
+
+.image-view img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
 }

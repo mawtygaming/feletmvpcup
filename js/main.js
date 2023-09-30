@@ -13,3 +13,16 @@ function goToSlide(id) {
     target_tab.classList.add('active')
 
 }
+
+var imgView = document.querySelector('.image-view')
+var imgEl = document.querySelector('.image-view img')
+function viewImage(filename) {
+    console.log(imgView)
+    imgView.classList.add('active')
+    imgEl.src = `img/${filename}`
+}
+
+function closeImage() {
+    imgView.classList.remove('active')
+    imgEl.src = ""
+}
