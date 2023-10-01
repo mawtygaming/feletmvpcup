@@ -77,14 +77,15 @@ nav.active .backdrop {
 
 .tape {
     height: 30px;
-    background: url(/img/sub-logo.png) #0566ad;
+    /* background: url(/img/sub-logo.png) #0566ad; */
+    background: url(/img/sub-logo.png) #000;
     background-repeat: repeat-x;
     background-position-y: center;
     background-size: 50px 10px;
     background-repeat: repeat-x space;
     position: sticky;
     top: 75px;
-z-index: 2;
+    z-index: 2;
 }
 
 section {
@@ -533,4 +534,25 @@ footer .links a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.image-slider .slick-next {
+    top: 50%;
+    right: 30px;
+}
+.image-slider .slick-prev {
+    top: 50%;
+    left: 0;
+}
+.image-slider .slick-prev::before,
+.image-slider .slick-next::before {
+    font-size: 80px;
+    opacity: 1;
+    font-family: inherit;
+}
+.slick-prev:before {
+    content: '<' !important;
+}
+.slick-next:before {
+    content: '>' !important;
 }
