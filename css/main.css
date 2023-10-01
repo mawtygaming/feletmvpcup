@@ -22,7 +22,8 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1em 0.75em;
+    /* padding: 1em 0.75em; */
+    padding: 1em 0.75em 1em 1.5em;
     position: sticky;
     top: 0;
     z-index: 99;
@@ -126,10 +127,12 @@ section h2 {
 }
 #banner .title {
     color: #efeed0;
+    color: #0566ad;
     text-shadow: 1px 1px 1px #074b2a;
 }
 #banner .sub-title {
     color: #8f8e77;
+    color: #db2727;
 }
 
 #banner .sponsors {
@@ -341,10 +344,16 @@ section h2 {
 .banner-img-bg {
     position: absolute;
     top: 0;
-    background: linear-gradient(
+    right: 0px;
+    /* background: linear-gradient(
         171deg,
         rgb(190 207 104 / 2%) 38%,
         rgb(190 255 132) 100%
+    ); */
+    background: linear-gradient(
+        171deg,
+        rgb(190 207 104 / 2%) 38%,
+        rgb(5 102 173) 100%
     );
     -webkit-clip-path: polygon(0 0, 57% 0, 100% 44%, 100% 100%);
     clip-path: polygon(0 0, 57% 0, 100% 44%, 100% 100%);
