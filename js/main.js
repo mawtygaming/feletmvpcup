@@ -35,3 +35,12 @@ function closeImage() {
     imgView.classList.remove('active')
     imgEl.src = ""
 }
+
+var nav = document.querySelector('header nav')
+function toggleMenu() {
+    if (!nav.classList.contains('active')) {
+        nav.classList.add('active')
+    } else {
+        nav.classList.remove('active')
+    }
+}

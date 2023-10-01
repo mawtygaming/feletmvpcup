@@ -47,7 +47,9 @@
                 src="img/main-logo.png"
                 alt="" />
             <nav>
-                <div class="menu-icon">
+                <div
+                    class="menu-icon"
+                    onclick="toggleMenu()">
                     <svg
                         viewBox="0 0 150 80"
                         width="40"
@@ -65,6 +67,46 @@
                             height="5"></rect>
                     </svg>
                 </div>
+                <div
+                    class="backdrop"
+                    onclick="toggleMenu()"></div>
+                <ul>
+                    <li>
+                        <a
+                            onclick="toggleMenu()"
+                            href="#brochure"
+                            >Brochure</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            onclick="toggleMenu()"
+                            href="#gallery"
+                            >Gallery</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            onclick="toggleMenu()"
+                            href="#process"
+                            >Tournament Process</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            onclick="toggleMenu()"
+                            href="#about-us"
+                            >About Us</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            onclick="toggleMenu()"
+                            href="#rankings"
+                            >Rankings</a
+                        >
+                    </li>
+                </ul>
             </nav>
         </header>
         <main>

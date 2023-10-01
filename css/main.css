@@ -17,6 +17,7 @@ body {
     height: 100vh;
 
     position: relative;
+    scroll-behavior: smooth;
 }
 header {
     display: flex;
@@ -33,6 +34,41 @@ header .logo {
     filter: saturate(0%) brightness(0%) contrast(100%);
     width: 40px;
     height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    background: #fff;
+    position: absolute;
+    right: -250px;
+    height: calc(100vh - 75px);
+    border-left: 1px solid #fff2f2;
+    padding: 1em 3em;
+    margin: 0;
+    transition: all ease 0.3s;
+}
+nav.active ul {
+    right: 0;
+}
+
+nav ul li {
+    padding: 10px 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav .backdrop {
+    position: absolute;
+    background: #1c1a1a82;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    display: none;
+}
+nav.active .backdrop {
+    display: block;
 }
 
 .tape {
@@ -351,6 +387,7 @@ footer {
 
 footer * {
     color: #9fb7c9;
+    color: #a1a4a7;
 }
 footer p {
     font-size: 0.725rem;
