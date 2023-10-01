@@ -2,6 +2,15 @@ setTimeout(() => {
     document.body.classList.remove('loading')
 }, 5000)
 
+
+$(document).ready(function () {
+    $('.image-slider').slick({
+        autoplay: true,
+        dots: false,
+    });
+});
+
+
 var tabs = document.querySelectorAll('.tab')
 function goToSlide(id) {
     const target = document.getElementById(id);
