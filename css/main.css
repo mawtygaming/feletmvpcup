@@ -361,12 +361,17 @@ footer a {
 }
 footer ul {
     list-style: none;
+    padding: 0;
+}
+
+footer .title,
+footer .company {
+    color: #fff;
 }
 
 footer .content {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     gap: 1em;
 }
 
@@ -374,19 +379,11 @@ footer .content > div {
     flex: 1 0 45%;
 }
 
-footer .shortcut-links a {
-    font-size: 0.825rem;
-}
+footer .shortcut-links,
 footer .contact {
     font-size: 0.825rem;
 }
 
-footer .contact .title {
-    color: #fff;
-}
-footer .contact ul {
-    padding: 0;
-}
 footer .links {
     display: flex;
 }
