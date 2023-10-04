@@ -83,6 +83,9 @@ nav ul {
     width: 100vw;
     top: 79px;
 }
+.sidebar-active  {
+   overflow: hidden;
+}
 .sidebar-active header {
     background-color: #0566ad;
 }
