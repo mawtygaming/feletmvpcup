@@ -70,24 +70,25 @@ header .logo {
 }
 
 nav ul {
-    list-style: none;
-    /* background: #038645; */
-    background: #092416;
+        list-style: none;
+    background: #038645;
+    /* background: #092416; */
     /* background: #0566ad; */
     position: absolute;
     right: -100vw;
-    height: calc(100vh - 75px);
+    height: calc(100vh - 80px);
     padding-left: 0;
     margin: 0;
     transition: all ease 0.3s;
     width: 100vw;
-    top: 79px;
+    top: 80px;
 }
 .sidebar-active  {
    overflow: hidden;
 }
 .sidebar-active header {
     background-color: #0566ad;
+    background-color: #03783d;
 }
 
 .sidebar-active nav ul {
@@ -100,6 +101,7 @@ nav ul {
 nav ul li {
     padding: 1.5em 30px;
     border-bottom: 1px solid #0e291b;
+    border-bottom: 1px solid #219059;
 }
 nav ul li a {
     text-decoration: none;
