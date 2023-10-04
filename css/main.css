@@ -71,11 +71,12 @@ header .logo {
 
 nav ul {
     list-style: none;
-    background: #046434;
+    /* background: #038645; */
+    background: #092416;
+    /* background: #0566ad; */
     position: absolute;
     right: -100vw;
     height: calc(100vh - 75px);
-    border-left: 1px solid #fff2f2;
     padding-left: 0;
     margin: 0;
     transition: all ease 0.3s;
@@ -83,11 +84,9 @@ nav ul {
     top: 79px;
 }
 .sidebar-active header {
-    background-color: #f1f0d2;
+    background-color: #0566ad;
 }
-.sidebar-active .menu-icon rect {
-    fill: black !important;
-}
+
 .sidebar-active nav ul {
     right: 0;
 }
@@ -97,7 +96,7 @@ nav ul {
 
 nav ul li {
     padding: 1.5em 30px;
-    border-bottom: 1px solid #177244;
+    border-bottom: 1px solid #0e291b;
 }
 nav ul li a {
     text-decoration: none;
