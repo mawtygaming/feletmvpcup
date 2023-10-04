@@ -58,10 +58,6 @@ header .logo-wrapper {
     padding: 1em;
 }
 
-.sidebar-active .logo-wrapper {
-    top: -190px;
-}
-
 header .logo {
     /* color: #000; */
     /* filter: saturate(0%) brightness(0%) contrast(100%); */
@@ -75,28 +71,37 @@ header .logo {
 
 nav ul {
     list-style: none;
-    background: #fff;
+    background: #046434;
     position: absolute;
     right: -100vw;
     height: calc(100vh - 75px);
     border-left: 1px solid #fff2f2;
-    /* padding: 1em 5em 1em 2em; */
-    padding-top: 1em;
     padding-left: 0;
     margin: 0;
     transition: all ease 0.3s;
     width: 100vw;
+    top: 79px;
+}
+.sidebar-active header {
+    background-color: #f1f0d2;
+}
+.sidebar-active .menu-icon rect {
+    fill: black !important;
 }
 .sidebar-active nav ul {
     right: 0;
 }
+.sidebar-active .logo-wrapper {
+    top: -190px;
+}
 
 nav ul li {
-    padding: 10px 30px;
+    padding: 1.5em 30px;
+    border-bottom: 1px solid #177244;
 }
 nav ul li a {
     text-decoration: none;
-    color: #000;
+    color: #bcdccc;
 }
 
 nav .backdrop {
