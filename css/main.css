@@ -65,7 +65,7 @@ header .top .links a {
     color: #0566ad;
 }
 .top .dropdown a i {
-    z-index: 1;
+    z-index: 2;
     font-size: 16px;
     transition: 0.3s ease;
 }
@@ -76,7 +76,9 @@ header .top .links a {
     margin: 0;
     top: -210px;
     right: 0;
-    transition: 0.3s ease;
+    z-index: 1;
+    opacity: 0;
+    transition: top 0.3s ease, opacity .7s ease;
 }
 .top .dropdown ul li {
     border-bottom: 1px solid #e4e6ed;
@@ -91,6 +93,7 @@ header .top .links a {
 
 .top .dropdown.active ul {
     top: 0;
+    opacity: 1;
 }
 .top .dropdown.active a i {
     transform: rotate(180deg);
