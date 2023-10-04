@@ -43,7 +43,15 @@
     <body>
         <header>
             <div class="top">
-             <div class="links">
+                <div class="dropdown">
+                    <a href="javascript:toggleDropodown();">Sports4Tourism <i class="fa fa-caret-down"></i></a>
+                    <ul>
+                        <li><a class="active" href="#">Sports4Tourism</a></li>
+                        <li><a href="#">Sports4Nature</a></li>
+                        <li><a href="#">Sports4YouthCharacterDevelopment</a></li>
+                    </ul>
+                </div>
+             <!-- <div class="links">
                     <a href="https://www.facebook.com/FELETPh?mibextid=ZbWKwL"
                         ><i class="fa-brands fa-facebook"></i
                     ></a>
@@ -55,7 +63,7 @@
                         href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.tiktok.com%2F%40feletphilippines%3F_t%3D8g7MOjsj62L%26_r%3D1%26fbclid%3DIwAR3TN7O2FXYy0j2atfQblp1TvcsEDj5-3SDulRkbrqFOc-P424l5vUQbTI4&h=AT1Gz9SYWKTEffmDrykdpEykwQpVKcw2MLidxMpdXweGO2P0qMagOjwIHuCX6KxqQhgcggevX65E6_9sTlKNBYtFIZg2pYbbIrjfdTaL5ZaT9zbnTcuS5Q_Sm9mtW68T9RTK5dVjV6o0Naioz_R4dg"
                         ><i class="fa-brands fa-tiktok"></i
                     ></a>
-                </div>
+                </div> -->
             </div>
             <div class="logo-wrapper">
                 <img
@@ -101,9 +109,29 @@
                     <li>
                         <a
                             onclick="toggleMenu()"
-                            href="downloadables/Get_Started_With_Smallpdf.pdf"
-                            download
-                            >Download Brochure</a
+                            href="#rankings"
+                            >Rankings</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            onclick="toggleMenu()"
+                            href="#calendar"
+                            >Calendar</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            onclick="toggleMenu()"
+                            href="#player"
+                            >Players</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            onclick="toggleMenu()"
+                            href="#news"
+                            >News & Media</a
                         >
                     </li>
                     <li>
@@ -116,22 +144,30 @@
                     <li>
                         <a
                             onclick="toggleMenu()"
+                            href="#organization"
+                            >Organization</a
+                        >
+                    </li>
+                    <!-- <li>
+                        <a
+                            onclick="toggleMenu()"
                             href="#process"
                             >Tournament Process</a
                         >
-                    </li>
-                    <li>
+                    </li> -->
+                    <!-- <li>
                         <a
                             onclick="toggleMenu()"
                             href="#about-us"
                             >About Us</a
                         >
-                    </li>
+                    </li> -->
                     <li>
                         <a
                             onclick="toggleMenu()"
-                            href="#rankings"
-                            >Rankings</a
+                            href="downloadables/Get_Started_With_Smallpdf.pdf"
+                            download
+                            >Download Brochure</a
                         >
                     </li>
                 </ul>
@@ -218,7 +254,32 @@
                     </div>
                 </div>
             </section>
-            <section id="gallery">
+             <section id="about-us">
+                <h2 class="section-title">BE THE CHAMPION</h2>
+                <div class="content">
+                    <p>
+                        Committed to delivering significant contributions to sports development in the country while elevating competitiveness and expanding the role of badminton in youth character development, we at FELET Philippines and Shuttlehub PH have been partnering with local government units, sports clubs, and like-minded organizations in hosting badminton tournaments.
+                    </p>
+                    <p>
+                        By 2024, we are leveling up our sports program by running the MANNY V. PANGILINAN CUP Philippine National Junior Mix Team Championship. This Championship is a year-long campaign, with numerous legs in key regions and provinces of the country, culminating with a Grand Finale to be held on August 2024. Going beyond the tournaments and plays, the event offers more as it adopts a sports tourism approach while carrying important social paradigms and focuses on working in collaboration with local communities and organizations.
+                    </p>
+                </div>
+            </section>
+            <section id="sponsors">
+                <h5 class="section-title">Sponsors</h5>
+                <div class="sponsor-logos">
+                    <img
+                        src="img/enlio.png"
+                        alt="" />
+                    <img
+                        src="img/shuttlehubph.png"
+                        alt="" />
+                    <img
+                        src="img/nextgen.png"
+                        alt="" />
+                </div>
+            </section>
+            <!-- <section id="gallery">
                 <h3 class="section-title">Gallery</h3>
                 <div class="content">
                     <div>
@@ -246,8 +307,9 @@
                             alt="" />
                     </div>
                 </div>
-            </section>
-            <section id="rankings">
+            </section> -->
+
+            <!-- <section id="rankings">
                 <h3 class="section-title">Rankings</h3>
                 <div class="tabs">
                     <a
@@ -1425,7 +1487,7 @@
                         </table>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <section id="process">
                 <h3 class="section-title">Tournament Process</h3>
                 <div class="content">
@@ -1463,7 +1525,8 @@
                     </div>
                 </div>
             </section>
-            <section id="about-us">
+           
+            <!-- <section id="about-us">
                 <h3 class="section-title">About Us</h3>
                 <div class="content">
                     <p>
@@ -1484,18 +1547,20 @@
                         omnis maiores!
                     </p>
                 </div>
-            </section>
+            </section> -->
         </main>
         <footer>
             <div class="content">
                 <div class="shortcut-links">
-                    <div class="title">Shortcuts</div>
+                    <div class="title">Quick Links</div>
                     <ul>
-                        <li><a href="#brochure">Brochure</a></li>
+                        <li><a href="#rankings">Rankings</a></li>
+                        <li><a href="downloadables/Get_Started_With_Smallpdf.pdf"
+                        <li><a href="#gallery">Gallery</a></li>
+                            download >Brochure</a></li>
                         <li><a href="#gallery">Gallery</a></li>
                         <li><a href="#process">Tournament Process</a></li>
                         <li><a href="#about-us">About Us</a></li>
-                        <li><a href="#rankings">Rankings</a></li>
                     </ul>
                 </div>
                 <div class="contact">

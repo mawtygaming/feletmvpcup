@@ -44,3 +44,12 @@ function toggleMenu() {
         body.classList.remove('sidebar-active')
     }
 }
+
+var dropdown = document.querySelector('.top .dropdown')
+function toggleDropodown() {
+    if (!dropdown.classList.contains('active')) {
+        dropdown.classList.add('active')
+    } else {
+        dropdown.classList.remove('active')
+    }
+}
