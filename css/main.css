@@ -42,11 +42,19 @@ header .top {
     justify-content: flex-end;
 }
 
+header .top .links {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1em;
+    gap: 1em;
+}
 header .top .links a {
     flex: 0 1 40px;
     font-size: 25px;
     text-align: center;
     color: #046133;
+    display: flex;
+    align-items: center;
 }
 
 .top .dropdown {

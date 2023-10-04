@@ -53,3 +53,6 @@ function toggleDropodown() {
         dropdown.classList.remove('active')
     }
 }
+function hideDropodown() {
+    dropdown.classList.remove('active')
+}
