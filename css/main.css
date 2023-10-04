@@ -7,6 +7,7 @@
 html,
 body {
     overflow-x: hidden;
+    background: #000;
 }
 body {
     background: fff;
@@ -14,7 +15,6 @@ body {
     height: 100vh;
     position: relative;
     scroll-behavior: smooth;
-    background-color: #fff;
 }
 ul {
     list-style: none;
@@ -110,7 +110,7 @@ header .logo-wrapper {
     box-shadow: -6px 3px 10px #00000029;
     background-color: #0566ad;
     z-index: 200;
-    transition: 0.5s ease-in-out;
+    transition: top 0.5s ease-in-out;
     display: grid;
     place-items: center;
     padding: 0 1em;
@@ -183,6 +183,7 @@ nav.active .backdrop {
 
 section {
     padding: 2em 2em 4em;
+    background: #fff;
 }
 
 #brochure {
@@ -474,10 +475,11 @@ section h2 {
     display: flex;
     gap: 1em;
     width: 100%;
-    overflow-x: auto;
+    /* overflow-x: auto; */
+    flex-wrap: wrap;
 }
 #gallery .content > div {
-    flex: 1 0 30%;
+    flex: 0 1 30%;
 }
 #gallery .content img {
     width: 100%;
