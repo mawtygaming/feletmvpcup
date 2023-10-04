@@ -36,11 +36,11 @@ function closeImage() {
     imgEl.src = ""
 }
 
-var nav = document.querySelector('header nav')
+var body = document.body
 function toggleMenu() {
-    if (!nav.classList.contains('active')) {
-        nav.classList.add('active')
+    if (!body.classList.contains('sidebar-active')) {
+        body.classList.add('sidebar-active')
     } else {
-        nav.classList.remove('active')
+        body.classList.remove('sidebar-active')
     }
 }
