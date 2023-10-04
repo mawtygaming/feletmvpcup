@@ -41,11 +41,7 @@ header .top {
     display: flex;
     justify-content: flex-end;
 }
-header .top .links {
-    display: flex;
-    justify-content: flex-end;
-    /* gap: 1em; */
-}
+
 header .top .links a {
     flex: 0 1 40px;
     font-size: 25px;
@@ -78,7 +74,7 @@ header .top .links a {
     right: 0;
     z-index: 1;
     opacity: 0;
-    transition: top 0.3s ease, opacity .7s ease;
+    transition: top 0.3s ease, opacity 0.7s ease;
     box-shadow: 0 0 10px #a3a1a150;
 }
 .top .dropdown ul li {
@@ -151,13 +147,37 @@ nav ul {
 nav ul li {
     border-bottom: 1px solid #009a4e;
 }
-nav ul li a {
+nav ul li.soc-med {
+    position: fixed;
+    bottom: 0;
+    border: 0;
+    width: 100%;
+}
+
+nav ul li.soc-med .links {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: center;
+    padding-right: 1em;
+    padding: 1em;
+    gap: 2em;
+    background: #002a15;
+}
+nav ul li.soc-med .links a {
+    text-align: center;
+    font-size: 30px;
+    color: #bcdccc;
+}
+nav ul li > a {
     padding-left: 2em;
     display: flex;
     align-items: center;
     height: 60px;
     text-decoration: none;
-    color: #bcdccc;
+    color: #6ac99a;
+}
+nav ul li > a.active {
+    color: #fff;
 }
 
 nav .backdrop {
