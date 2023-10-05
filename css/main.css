@@ -42,6 +42,7 @@ header {
         rgba(3, 143, 74, 1) 100%
     ); */
     background: #0a7b43;
+    background: #0566ad;
 }
 header .top {
     flex: 1 0 100%;
@@ -665,7 +666,7 @@ footer .links a {
     overflow: hidden;
 }
 .sidebar-active .top {
-    background: #0566ad;
+    /* background: #0566ad; */
 }
 .menu-icon rect {
     fill: #fff;
