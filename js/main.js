@@ -4,9 +4,24 @@ setTimeout(() => {
 
 
 $(document).ready(function () {
-    $('.image-slider').slick({
+    $('.banner-slider').slick({
         autoplay: true,
+        autoplaySpeed: 60000,
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+    });
+    $('.logo-slider').slick({
+        slidesToShow: 2,
+        // autoplay: true,
+        autoplaySpeed: 5000,
         dots: false,
+        infinite: true,
+        speed: 500,
+        cssEase: 'linear',
+        arrows: false,
     });
 });
 
