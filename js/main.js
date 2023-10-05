@@ -15,7 +15,7 @@ $(document).ready(function () {
     });
     $('.logo-slider').slick({
         slidesToShow: 2,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 5000,
         dots: false,
         infinite: true,
