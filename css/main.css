@@ -103,8 +103,8 @@ header .top .links a {
 .top .dropdown ul li a {
     display: flex;
     align-items: center;
-    height: 46px;
-    padding: 0 2em;
+    height: 37px;
+    padding: 0 4em 0 2em;
     color: #aec4d4;
 }
 
